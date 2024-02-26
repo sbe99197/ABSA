@@ -11,6 +11,7 @@ ipython_config.py
 
 # 로그 파일 무시
 *.log
+*.pyc
 
 # 특정 디렉토리 무시
 outputs/

@@ -24,10 +24,6 @@ openai==0.27.7
 Requests==2.31.0
 
 ## git tokens
-<<<<<<< HEAD
-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
-=======
-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
->>>>>>> 8a606b5 (Initial commit)
+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
 /home/elicer/.ssh/id_ed25519
 
