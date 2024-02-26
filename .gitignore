@@ -1,0 +1,17 @@
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# 로그 파일 무시
+*.log
+
+# 특정 디렉토리 무시
+outputs/
+

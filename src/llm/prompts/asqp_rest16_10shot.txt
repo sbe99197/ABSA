@@ -1,0 +1,38 @@
+According to the following sentiment elements definition: 
+
+- The 'aspect term' refers to a specific feature, attribute, or aspect of a product or service that a user may express an opinion about, the aspect term might be 'null' for implicit aspect.
+- The 'opinion term' refers to the sentiment or attitude expressed by a user towards a particular aspect or feature of a product or service, the aspect term might be 'null' for implicit opinion.
+- The 'aspect category' refers to the category that aspect belongs to, and the available catgories includes: 'location general', 'food prices', 'food quality', 'food general', 'ambience general', 'service general', 'restaurant prices', 'drinks prices', 'restaurant miscellaneous', 'drinks quality', 'drinks style_options', 'restaurant general' and 'food style_options'.
+- The 'sentiment polarity' refers to the degree of positivity, negativity or neutrality expressed in the opinion towards a particular aspect or feature of a product or service, and the available polarities inlcudes: 'positive', 'negative' and 'neutral'.
+
+Extract the sentiment elements from the text according to the defined categories and format them as [['aspect term', 'opinion term', 'aspect category', 'sentiment polarity'], ...]. Reply with the answer only.
+
+Text: Helpful service and average price per dish $ 10 .
+Sentiment Elements: [['service', 'Helpful', 'service general', 'positive'], ['dish', '$ 10', 'food prices', 'neutral']]]
+
+Text: They were such a rip-off ( $ 8 .95 for four small meat patties in steamed buns ) and not worth trying .
+Sentiment Elements: [['NULL', 'rip-off', 'food quality', 'negative'], ['NULL', 'small', 'food style_options', 'negative'], ['NULL', 'not worth', 'food prices', 'negative']]
+
+Text: The wait staff is pleasant , fun , and for the most part gorgeous ( in the wonderful aesthetic beautification way , not in that she 's-way-cuter-than-me-that-b @ # $ * way ) .
+Sentiment Elements: [['wait staff', 'pleasant', 'service general', 'positive'], ['wait staff', 'fun', 'service general', 'positive'], ['wait staff', 'gorgeous', 'service general', 'positive']]
+
+Text: To top it all off . . the main reason we came to your restaurant was for the belly dancers and missed the first show as we were not seated yet and the 2nd belly dancer only danced at two tables in the back of the restaurant and never made it around to the other half of the restaurant .
+Sentiment Elements: [['NULL', 'never made it around', 'service general', 'negative']]
+
+Text: I have it a 4 instead of 5 because of the price ( just chicken tikka masala - no bread of rice - is $ 25 ) , which I would expect at a upscale Indian restaurant but this place doesn 't have an upscale feel .
+Sentiment Elements: [['place', '4 instead of 5', 'restaurant general', 'positive'], ['chicken tikka masala', 'no bread of rice', 'chicken tikka masala', 'negative'], ['feel', "doesn 't have an upscale feel", 'ambience general', 'negative']]
+
+Text: If you ’ re planning to come here , make sure that your date is someone whom you really like since you ’ ll be ushered to private booths where there will be no people or food watching ( choose the ones on the ground level that have glass ceilings so you may see the stars in the sky ! ) .
+Sentiment Elements: [['private booths', 'ushered', 'ambience general', 'positive']]
+
+Text: Yes , the place is classy and beautiful , but they most certainly target the uber whealthy Not the common joe that wants to go all out every once in a while .
+Sentiment Elements: [['place', classy', 'ambience general', 'positive'], ['place', beautiful', 'ambience general', 'positive'], ['place', target the uber whealthy', 'restaurant prices', 'negative']]
+
+Text: By the time we finished our dinner we still had not received one beverage NOR hooka !
+Sentiment Elements: [['NULL', 'still had not received', 'service general', 'negative']]
+
+Text: By the time we left our wallets were empy and so were our stomachs AND we missed the show we were supposed to see following our dinner , which would have been acceptable if we got to enjoy the experience of good food and belly dancers !
+Sentiment Elements: [['food', 'our wallets were empy and so were our stomachs', 'food quality', 'negative'], ['NULL', 'left our wallets were empy', 'restaurant prices', 'negative'], ['NULL', 'missed', 'restaurant miscellaneous', 'negative']]
+
+Text: I like the somosas , chai , and the chole , but the dhosas and dhal were kinda dissapointing .
+Sentiment Elements: [[''somosas', 'like', 'food quality', 'positive'], ['chai', 'like', 'food quality', 'positive'], ['dhosas', 'dissapointing', 'food quality', 'negative'], ['dhal', 'dissapointing', 'food quality', 'negative']]
