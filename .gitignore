@@ -14,6 +14,7 @@ ipython_config.py
 *.pyc
 
 # 특정 디렉토리 무시
+outputs/mvp
 outputs/dlo
 outputs/llm
 outputs/paraphrase
