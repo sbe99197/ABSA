@@ -23,7 +23,4 @@ transformers==4.14.1
 openai==0.27.7
 Requests==2.31.0
 
-## git tokens
-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
-/home/elicer/.ssh/id_ed25519
 
